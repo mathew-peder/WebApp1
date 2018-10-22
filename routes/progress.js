@@ -4,21 +4,18 @@ let router = express.Router();
 let mongoose = require('mongoose');
 let uriUtil = require('mongodb-uri');
 
-//var mongodbUri ='mongodb://donationsdb:donationsdb999@ds255260.mlab.com:55260/donationsdb';
 
-//mongoose.connect(mongodbUri);
+mongoose.connect('mongodb://localhost:27017/workoutdb');
 
-//mongoose.connect('mongodb://localhost:27017/donationsdb');
-//
-// let db = mongoose.connection;
-//
-// db.on('error', function (err) {
-//     console.log('Unable to Connect to [ ' + db.name + ' ]', err);
-// });
-//
-// db.once('open', function () {
-//     console.log('Successfully Connected to [ ' + db.name + ' ] on mlab.com');
-// });
+let db = mongoose.connection;
+
+db.on('error', function (err) {
+     console.log('Unable to Connect to [ ' + db.name + ' ]', err);
+});
+
+db.once('open', function () {
+     console.log('Successfully Connected to [ ' + db.name + ' ] on mlab.com');
+});
 
 router.findAll = (req, res) => {
     // Return a JSON representation of our list

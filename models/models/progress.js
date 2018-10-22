@@ -1,7 +1,14 @@
-const progress = [
-    {id: 1000000, Date: Date, Gender: "M", Age: 27, Weight: 80, Height: 1, Waist: 30},
-    {id: 1000001, Date: Date, Gender: "M", Age: 27, Weight: 81, Height: 2, Waist: 31},
-    {id: 1000002, Date: Date, Gender: "M", Age: 27, Weight: 80, Height: 1, Waist: 30}
-];
+let mongoose = require('mongoose');
 
-module.exports = progress;
+let ProgressSchema = new mongoose.Schema({
+        Date: {type: Number, default: 0},
+        Gender: {type: String, default: ""},
+        Age: {type: Number, default: 0},
+        Weight: {type: Number, default: 0},
+        Height: {type: Number, default: 0},
+        Waist: {type: Number, default: 0}
+    },
+    { collection: 'progress' });
+
+module.exports = mongoose.model('Progress', ProgressSchema)
+

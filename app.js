@@ -27,7 +27,17 @@ app.use('/progress', progressRouter);
 app.use('/schedule', scheduleRouter)
 
 app.get('/progress', progress.findAll);
-app.get('/schedule', schedule.findAll)
+app.get('/schedule', schedule.findAll);
+app.post('/progress', progress.addProgress);
+app.post('/schedule', schedule.addSchedule);
+app.put('/schedule/Sunday/:id', schedule.addSunday)
+app.put('/schedule/Monday/:id', schedule.addMonday)
+app.put('/schedule/Tuesday/:id', schedule.addTuesday)
+app.put('/schedule/Wednesday/:id', schedule.addWednesday)
+app.put('/schedule/Thursday/:id', schedule.addThursday)
+app.put('/schedule/Friday/:id', schedule.addFriday)
+app.put('/schedule/Saturday/:id', schedule.addSatday)
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

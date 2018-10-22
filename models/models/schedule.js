@@ -1,33 +1,39 @@
-const schedule = [
-    Sunday = [
-        {Workout1: "", Workout2: "", Workout3: "", Workout4: "", Workout5: ""},
-        {W1reps: "", W2reps: "", W3reps: "", W4reps: "", W5reps: ""}
-        ],
-    Monday = [
-        {Workout1: "", Workout2: "", Workout3: "", Workout4: "", Workout5: ""},
-        {W1reps: "", W2reps: "", W3reps: "", W4reps: "", W5reps: ""}
-        ],
-    Tuesday = [
-        {Workout1: "", Workout2: "", Workout3: "", Workout4: "", Workout5: ""},
-        {W1reps: "", W2reps: "", W3reps: "", W4reps: "", W5reps: ""}
-        ],
-    Wednesday = [
-        {Workout1: "", Workout2: "", Workout3: "", Workout4: "", Workout5: ""},
-        {W1reps: "", W2reps: "", W3reps: "", W4reps: "", W5reps: ""}
-        ],
-    Thursday = [
-        {Workout1: "", Workout2: "", Workout3: "", Workout4: "", Workout5: ""},
-        {W1reps: "", W2reps: "", W3reps: "", W4reps: "", W5reps: ""}
-        ],
-    Friday = [
-        {Workout1: "", Workout2: "", Workout3: "", Workout4: "", Workout5: ""},
-        {W1reps: "", W2reps: "", W3reps: "", W4reps: "", W5reps: ""}
-        ],
-    Saturday = [
-        {Workout1: "", Workout2: "", Workout3: "", Workout4: "", Workout5: ""},
-        {W1reps: "", W2reps: "", W3reps: "", W4reps: "", W5reps: ""}
-        ]
-]
+let mongoose = require('mongoose');
 
-module.exports = schedule;
+let ScheduleSchema = new mongoose.Schema({
+        Sunday: [{
+            workout: {type: String, default: ""},
+            reps: {type: Number, default: 0}
+                }],
+        Monday: [{
+            workout: {type: String, default: ""},
+            reps: {type: Number, default: 0}
+        }],
+        Tuesday: [{
+            workout: {type: String, default: ""},
+            reps: {type: Number, default: 0}
+        }],
+        Wednesday: [{
+            workout: {type: String, default: ""},
+            reps: {type: Number, default: 0}
+        }],
+        Thursday: [{
+            workout: {type: String, default: ""},
+            reps: {type: Number, default: 0}
+        }],
+        Friday: [{
+            workout: {type: String, default: ""},
+            reps: {type: Number, default: 0}
+        }],
+        Saturday: [{
+            workout: {type: String, default: ""},
+            reps: {type: Number, default: 0}
+        }]
+
+    },
+    { collection: 'schedule' });
+
+module.exports = mongoose.model('Schedule', ScheduleSchema)
+
+
 
