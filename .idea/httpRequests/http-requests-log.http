@@ -1,0 +1,22 @@
+POST http://localhost:3000/progress/1000000
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"paymenttype": "PayPal", "amount": 1100, "upvotes": 0}
+
+<> 2018-10-21T103127.404.html
+
+###
+
+POST http://localhost:3000/progress/0000001
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"paymenttype": "PayPal", "amount": 1100, "upvotes": 0}
+
+<> 2018-10-21T103116.404.html
+
+###
+
