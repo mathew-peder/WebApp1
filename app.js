@@ -6,7 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var progressRouter = require('./routes/progress');
-var scheduleRouter = require('./routes/schedule')
+var scheduleRouter = require('./routes/schedule');
 const progress = require("./routes/progress");
 const schedule = require("./routes/schedule");
 
@@ -24,19 +24,19 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/progress', progressRouter);
-app.use('/schedule', scheduleRouter)
+app.use('/schedule', scheduleRouter);
 
 app.get('/progress', progress.findAll);
 app.get('/schedule', schedule.findAll);
 app.post('/progress', progress.addProgress);
 app.post('/schedule', schedule.addSchedule);
-app.put('/schedule/Sunday/:id', schedule.addSunday)
-app.put('/schedule/Monday/:id', schedule.addMonday)
-app.put('/schedule/Tuesday/:id', schedule.addTuesday)
-app.put('/schedule/Wednesday/:id', schedule.addWednesday)
-app.put('/schedule/Thursday/:id', schedule.addThursday)
-app.put('/schedule/Friday/:id', schedule.addFriday)
-app.put('/schedule/Saturday/:id', schedule.addSatday)
+app.put('/schedule/Sunday/:id', schedule.addSunday);
+app.put('/schedule/Monday/:id', schedule.addMonday);
+app.put('/schedule/Tuesday/:id', schedule.addTuesday);
+app.put('/schedule/Wednesday/:id', schedule.addWednesday);
+app.put('/schedule/Thursday/:id', schedule.addThursday);
+app.put('/schedule/Friday/:id', schedule.addFriday);
+app.put('/schedule/Saturday/:id', schedule.addSaturday);
 
 
 // catch 404 and forward to error handler
