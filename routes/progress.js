@@ -18,6 +18,9 @@ db.once('open', function () {
      console.log('Successfully Connected to [ ' + db.name + ' ] on mlab.com');
 });
 
+/*
+Finds the entire collection in a db using GET for the specified collection.
+ */
 router.findAll = (req, res) => {
     // Return a JSON representation of our list
     res.setHeader('Content-Type', 'application/json');
@@ -30,6 +33,9 @@ router.findAll = (req, res) => {
     });
 };
 
+/*
+Searches the db using the ID using GET and prints the found content.
+ */
 router.findOne = (req, res) => {
 
     res.setHeader('Content-Type', 'application/json');
@@ -42,7 +48,9 @@ router.findOne = (req, res) => {
     });
 };
 
-
+/*
+Adds the progress using POST. Adds an empty/default value for each data type and posts it to the db.
+ */
 router.addProgress = (req, res) => {
 
     res.setHeader('Content-Type', 'application/json');
@@ -56,7 +64,6 @@ router.addProgress = (req, res) => {
     progress.heightText = req.body.height;
     progress.waistText = req.body.waist;
 
-
     progress.save(function(err) {
         if (err)
             res.json({ message: 'Progress NOT Added!', errmsg : err } );
@@ -65,6 +72,10 @@ router.addProgress = (req, res) => {
     });
 };
 
+/*
+Used to update progress by ID. Updates the entire progress by pushing to all the data types.
+Currently having issues with PUT. Throws an error stating 'age' is an array, but it is not.
+ */
 router.updateProgress = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
     Progress.findByIdAndUpdate(req.params.id,
@@ -78,10 +89,9 @@ router.updateProgress = (req, res) => {
     );
 };
 
-
-
-
-
+/*
+Finds the content by it's id and deletes it from the collection
+ */
 router.deleteProgress = (req, res) => {
 
     Progress.findByIdAndRemove(req.params.id, function(err) {
@@ -91,6 +101,5 @@ router.deleteProgress = (req, res) => {
             res.json({ message: 'Progress Successfully Deleted!'});
     });
 };
-
 
 module.exports = router;

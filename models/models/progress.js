@@ -1,5 +1,8 @@
 let mongoose = require('mongoose');
 
+/*
+Schema for the Progress collection.
+ */
 let ProgressSchema = new mongoose.Schema({
         date: {type: String, default: "2018-10-27"},
         gender: {type: String, default: ""},

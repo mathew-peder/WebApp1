@@ -1,3 +1,7 @@
+/*
+This code was referenced from the code given to us in the lab and changed/updated as needed with my own code to suit the application.
+*/
+
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -28,18 +32,11 @@ app.use('/schedule', scheduleRouter);
 
 app.get('/progress', progress.findAll);
 app.get('/schedule', schedule.findAll);
-app.get('/progress/:id', schedule.findOne);
+app.get('/progress/:id', progress.findOne);
 app.get('/schedule/:id', schedule.findOne);
 app.post('/progress', progress.addProgress);
 app.post('/schedule', schedule.addSchedule);
 app.post('/progress/', progress.addProgress);
-app.post('/schedule/sunday', schedule.updateSunday);
-app.post('/schedule/monday', schedule.updateMonday);
-app.post('/schedule/tuesday', schedule.updateTuesday);
-app.post('/schedule/wednesday', schedule.updateWednesday);
-app.post('/schedule/thursday', schedule.updateThursday);
-app.post('/schedule/friday', schedule.updateFriday);
-app.post('/schedule/saturday', schedule.updateSaturday);
 app.put('/progress/:id', progress.updateProgress);
 app.put('/schedule/sunday/:id', schedule.updateSunday);
 app.put('/schedule/monday/:id', schedule.updateMonday);

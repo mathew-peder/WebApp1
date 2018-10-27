@@ -4,7 +4,6 @@ let router = express.Router();
 let mongoose = require('mongoose');
 let uriUtil = require('mongodb-uri');
 
-
 mongoose.connect('mongodb://localhost:27017/workoutdb');
 var mongodbUri = 'mongodb://mpeder:NAVY1991@ds143293.mlab.com:43293/workoutdb';
 mongoose.connect(mongodbUri);
@@ -21,6 +20,9 @@ db.once('open', function ()
     console.log('Successfully Connected to [ ' + db.name + ' ] on mlab.com');
 });
 
+/*
+Finds the entire collection in a db using GET for the specified collection.
+ */
 router.findAll = (req, res) =>
 {
     // Return a JSON representation of our list
@@ -34,6 +36,9 @@ router.findAll = (req, res) =>
     });
 };
 
+/*
+Searches the db using the ID using GET and prints the found content.
+ */
 router.findOne = (req, res) => {
 
     res.setHeader('Content-Type', 'application/json');
@@ -46,6 +51,10 @@ router.findOne = (req, res) => {
     });
 };
 
+/*
+Used to update progress by ID and day of the week in the array. Updates the specified day in the week by pushing to all the data types in that day.
+Unlike progress, this update does not have the same issue and works as intended
+ */
 router.updateSunday = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
     Schedule.findByIdAndUpdate(req.params.id,
@@ -137,6 +146,9 @@ router.updateSaturday = (req, res) => {
     );
 };
 
+/*
+Adds an empty schedule for the whole week in the collection
+ */
 router.addSchedule = (req, res) => {
 
     res.setHeader('Content-Type', 'application/json');
@@ -152,8 +164,9 @@ router.addSchedule = (req, res) => {
     });
 };
 
-
-
+/*
+Finds the content by it's id and deletes it from the collection
+ */
 router.deleteSchedule = (req, res) => {
 
     Schedule.findByIdAndRemove(req.params.id, function(err) {

@@ -1,5 +1,8 @@
 let mongoose = require('mongoose');
 
+/*
+Schema for the Schedule collection which is an array for each day of the week.
+ */
 let ScheduleSchema = new mongoose.Schema({
         sunday: [{
             workout: {type: String, default: ""},
