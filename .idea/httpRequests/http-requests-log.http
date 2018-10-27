@@ -1,177 +1,110 @@
-GET http://localhost:3000/schedule/
+PUT http://localhost:3000/progress/5bd4603b38055221da2905fe
 Accept: application/json
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"workoutText": "Bench", "repText": 1100}
+{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
 
-<> 2018-10-22T033954.200.json
+<> 2018-10-27T020812.200.json
 
 ###
 
-PUT http://localhost:3000/schedule/Monday/5bcddca5ae680f729712fa5d
+PUT http://localhost:3000/progress/5bd4603b38055221da2905fe
 Accept: application/json
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"workoutText": "Bench", "repText": 1100}
+{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
 
-<> 2018-10-22T033944.200.json
+<> 2018-10-27T015543.200.json
 
 ###
 
-GET http://localhost:3000/schedule
+POST http://localhost:3000/progress/5bd4603b38055221da2905fe
 Accept: application/json
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"workoutText": "Bench", "repText": 1100}
+{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
 
-<> 2018-10-22T033930.200.json
+<> 2018-10-27T015538.404.html
 
 ###
 
-PUT http://localhost:3000/schedule/Monday/1000001
+POST http://localhost:3000/progress/
 Accept: application/json
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"workoutText": "Bench", "repText": 1100}
+{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
 
-<> 2018-10-22T033917.200.json
+<> 2018-10-27T015523.200.json
 
 ###
 
-GET http://localhost:3000/schedule
+GET http://localhost:3000/progress/
 Accept: application/json
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"paymenttype": "PayPal", "amount": 1100, "upvotes": 0}
+{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
 
-<> 2018-10-22T032516.200.json
+<> 2018-10-27T015513.200.json
 
 ###
 
-POST http://localhost:3000/schedule
+DELETE http://localhost:3000/progress/5bd45ff21f36bf2149bc6099
 Accept: application/json
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"paymenttype": "PayPal", "amount": 1100, "upvotes": 0}
+{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
 
-<> 2018-10-22T032512.200.json
+<> 2018-10-27T015500.200.json
 
 ###
 
-GET http://localhost:3000/schedule
+GET http://localhost:3000/progress/5bd45ff21f36bf2149bc6099
 Accept: application/json
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"paymenttype": "PayPal", "amount": 1100, "upvotes": 0}
+{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
 
-<> 2018-10-22T032509.200.json
+<> 2018-10-27T015454.200.json
 
 ###
 
-GET http://localhost:3000/schedule
+GET http://localhost:3000/progress/
 Accept: application/json
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"paymenttype": "PayPal", "amount": 1100, "upvotes": 0}
+{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
 
-<> 2018-10-22T032028.200.json
+<> 2018-10-27T015442.200.json
 
 ###
 
-POST http://localhost:3000/schedule
+POST http://localhost:3000/progress/
 Accept: application/json
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"paymenttype": "PayPal", "amount": 1100, "upvotes": 0}
+{"dateText": "10", "genderText": "M", "ageText": "27", "weightText": 10, "heightText": 10, "waistText": 10}
 
-<> 2018-10-22T032021.200.json
+<> 2018-10-27T015410.200.json
 
 ###
 
-GET http://localhost:3000/schedule
+DELETE http://localhost:3000/progress/5bd4559c1ec2e318e691d54b
 Accept: application/json
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"paymenttype": "PayPal", "amount": 1100, "upvotes": 0}
+{"dateText": "10", "genderText": "M", "ageText": "27", "weightText": 10, "heightText": 10, "waistText": 10}
 
-<> 2018-10-22T031900.200.json
-
-###
-
-POST http://localhost:3000/schedule
-Accept: application/json
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"paymenttype": "PayPal", "amount": 1100, "upvotes": 0}
-
-<> 2018-10-22T031852.200.json
-
-###
-
-POST http://localhost:3000/schedule
-Accept: application/json
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"paymenttype": "PayPal", "amount": 1100, "upvotes": 0}
-
-<> 2018-10-22T031841.404.html
-
-###
-
-GET http://localhost:3000/schedule
-Accept: application/json
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"paymenttype": "PayPal", "amount": 1100, "upvotes": 0}
-
-###
-
-GET http://localhost:3000/schedule
-Accept: application/json
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"paymenttype": "PayPal", "amount": 1100, "upvotes": 0}
-
-###
-
-GET http://localhost:3000/schedule
-Accept: application/json
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"paymenttype": "PayPal", "amount": 1100, "upvotes": 0}
-
-###
-
-GET http://localhost:3000/schedule
-Accept: application/json
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"paymenttype": "PayPal", "amount": 1100, "upvotes": 0}
-
-###
-
-GET http://localhost:3000/schedule
-Accept: application/json
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"paymenttype": "PayPal", "amount": 1100, "upvotes": 0}
+<> 2018-10-27T015402.200.json
 
 ###
 
@@ -180,9 +113,207 @@ Accept: application/json
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"paymenttype": "PayPal", "amount": 1100, "upvotes": 0}
+{"dateText": "10", "genderText": "M", "ageText": "27", "weightText": 10, "heightText": 10, "waistText": 10}
 
-<> 2018-10-22T025955.200.json
+<> 2018-10-27T015348.200.json
+
+###
+
+DELETE http://localhost:3000/progress/5bd45b7b8425751e24302d8f
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"dateText": "10", "genderText": "M", "ageText": "27", "weightText": 10, "heightText": 10, "waistText": 10}
+
+<> 2018-10-27T015341.200.json
+
+###
+
+PUT http://localhost:3000/progress/5bd45b7b8425751e24302d8f
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"dateText": "10", "genderText": "M", "ageText": "27", "weightText": 10, "heightText": 10, "waistText": 10}
+
+<> 2018-10-27T015016.200.json
+
+###
+
+PUT http://localhost:3000/progress/5bd45b7b8425751e24302d8f
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
+
+<> 2018-10-27T014942-2.200.json
+
+###
+
+PUT http://localhost:3000/progress/5bd45b7b8425751e24302d8f
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
+
+<> 2018-10-27T014942-1.200.json
+
+###
+
+PUT http://localhost:3000/progress/5bd45b7b8425751e24302d8f
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
+
+<> 2018-10-27T014942.200.json
+
+###
+
+PUT http://localhost:3000/progress/5bd45b7b8425751e24302d8f
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
+
+<> 2018-10-27T014941.200.json
+
+###
+
+PUT http://localhost:3000/progress/5bd45b7b8425751e24302d8f
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
+
+<> 2018-10-27T014703.200.json
+
+###
+
+GET http://localhost:3000/progress/
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
+
+<> 2018-10-27T014636.200.json
+
+###
+
+GET http://localhost:3000/progress/
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
+
+<> 2018-10-27T014620-1.400.html
+
+###
+
+GET http://localhost:3000/progress/
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
+
+<> 2018-10-27T014620.400.html
+
+###
+
+GET http://localhost:3000/progress/
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
+
+<> 2018-10-27T014619.400.html
+
+###
+
+GET http://localhost:3000/progress/
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
+
+<> 2018-10-27T014606.400.html
+
+###
+
+GET http://localhost:3000/progress/
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"dateText": "10", "genderText": "M", "ageText": 10, "weightText": 10, "heightText": 10, "waistText": 10}
+
+<> 2018-10-27T014147.200.json
+
+###
+
+GET http://localhost:3000/progress/
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"dateText": "10", "genderText": "M", "ageText": 10, "weightText": 10, "heightText": 10, "waistText": 10}
+
+<> 2018-10-27T014054.200.json
+
+###
+
+GET http://localhost:3000/progress/5bd45b7b8425751e24302d8f
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"dateText": "10", "genderText": "M", "ageText": 10, "weightText": 10, "heightText": 10, "waistText": 10}
+
+<> 2018-10-27T014049.200.json
+
+###
+
+PUT http://localhost:3000/progress/5bd45b7b8425751e24302d8f
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"dateText": "10", "genderText": "M", "ageText": 10, "weightText": 10, "heightText": 10, "waistText": 10}
+
+<> 2018-10-27T014046.200.json
+
+###
+
+PUT http://localhost:3000/progress/5bd45b7b8425751e24302d8f
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"dateText": "10", "genderText": "M", "ageText": 10, "weightText": 10, "heightText": 10, "waistText": 10}
+
+<> 2018-10-27T014045.200.json
+
+###
+
+PUT http://localhost:3000/progress/5bd45b7b8425751e24302d8f
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"dateText": "10", "genderText": "M", "ageText": 10, "weightText": 10, "heightText": 10, "waistText": 10}
+
+<> 2018-10-27T013658.200.json
 
 ###
 
@@ -191,9 +322,20 @@ Accept: application/json
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"paymenttype": "PayPal", "amount": 1100, "upvotes": 0}
+{"workoutText": "Bench", "repText": 10}
 
-<> 2018-10-22T025503.200.json
+<> 2018-10-27T013518.200.json
+
+###
+
+POST http://localhost:3000/progress
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"workoutText": "Bench", "repText": 10}
+
+<> 2018-10-27T013507.200.json
 
 ###
 
@@ -202,65 +344,207 @@ Accept: application/json
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"paymenttype": "PayPal", "amount": 1100, "upvotes": 0}
+{"workoutText": "Bench", "repText": 10}
+
+<> 2018-10-27T013444.200.json
 
 ###
 
-GET http://localhost:3000/progress
+GET http://localhost:3000/schedule/5bd4504b7582ab160fb09fd4
 Accept: application/json
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"paymenttype": "PayPal", "amount": 1100, "upvotes": 0}
+{"workoutText": "Bench", "repText": 10}
+
+<> 2018-10-27T013427.200.json
 
 ###
 
-GET http://localhost:3000/progress
+GET http://localhost:3000/schedule/sunday/5bd4504b7582ab160fb09fd4
 Accept: application/json
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"paymenttype": "PayPal", "amount": 1100, "upvotes": 0}
+{"workoutText": "Bench", "repText": 10}
+
+<> 2018-10-27T013420.404.html
 
 ###
 
-GET http://localhost:3000/progress
+PUT http://localhost:3000/schedule/sunday/5bd4504b7582ab160fb09fd4
 Accept: application/json
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"paymenttype": "PayPal", "amount": 1100, "upvotes": 0}
+{"workoutText": "Bench", "repText": 10}
+
+<> 2018-10-27T013411.200.json
 
 ###
 
-GET http://localhost:3000/progress
+PUT http://localhost:3000/schedule/5bd4504b7582ab160fb09fd4
 Accept: application/json
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"paymenttype": "PayPal", "amount": 1100, "upvotes": 0}
+{"workoutText": "Bench", "repText": 10}
+
+<> 2018-10-27T013325.404.html
 
 ###
 
-POST http://localhost:3000/progress/1000000
+GET http://localhost:3000/schedule
 Accept: application/json
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"paymenttype": "PayPal", "amount": 1100, "upvotes": 0}
+{"workoutText": "Bench", "repText": 10}
 
-<> 2018-10-21T103127.404.html
+<> 2018-10-27T013308.200.json
 
 ###
 
-POST http://localhost:3000/progress/0000001
+GET http://localhost:3000/schedule
 Accept: application/json
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"paymenttype": "PayPal", "amount": 1100, "upvotes": 0}
+{"dateText":  "2018-10-27", "genderText": "M" , "ageText": 27, "weightText": 80, "heightText": 70, "waistText": 33}
 
-<> 2018-10-21T103116.404.html
+<> 2018-10-27T013135.200.json
+
+###
+
+PUT http://localhost:3000/schedule
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"dateText":  "2018-10-27", "genderText": "M" , "ageText": 27, "weightText": 80, "heightText": 70, "waistText": 33}
+
+<> 2018-10-27T013130.404.html
+
+###
+
+PUT http://localhost:3000/progress/5bd4559c1ec2e318e691d54b
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"dateText":  "2018-10-27", "genderText": "M" , "ageText": 27, "weightText": 80, "heightText": 70, "waistText": 33}
+
+<> 2018-10-27T012741.200.json
+
+###
+
+GET http://localhost:3000/progress/5bd4559c1ec2e318e691d54b
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"dateText":  "2018-10-27", "genderText": "M" , "ageText": 27, "weightText": 80, "heightText": 70, "waistText": 33}
+
+<> 2018-10-27T012738.200.json
+
+###
+
+PUT http://localhost:3000/progress/5bd4559c1ec2e318e691d54b
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"dateText":  "2018-10-27", "genderText": "M" , "ageText": 27, "weightText": 80, "heightText": 70, "waistText": 33}
+
+<> 2018-10-27T012711.200.json
+
+###
+
+GET http://localhost:3000/progress/5bd4559c1ec2e318e691d54b
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"dateText":  "2018-10-27", "genderText": "M" , "ageText": 27, "weightText": 80, "heightText": 70, "waistText": 33}
+
+<> 2018-10-27T012703.200.json
+
+###
+
+GET http://localhost:3000/progress/5bd4559c1ec2e318e691d54b
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"dateText":  "2018-10-27", "genderText": "M" , "ageText": 27, "weightText": 80, "heightText": 70, "waistText": 33}
+
+<> 2018-10-27T012622.200.json
+
+###
+
+PUT http://localhost:3000/progress/5bd4559c1ec2e318e691d54b
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"dateText":  "2018-10-27", "genderText": "M" , "ageText": 27, "weightText": 80, "heightText": 70, "waistText": 33}
+
+<> 2018-10-27T012611.404.html
+
+###
+
+PUT http://localhost:3000/progress/5bd4559c1ec2e318e691d54b
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"dateText":  0, "genderText": "M" , "ageText": 27, "weightText": 80, "heightText": 70, "waistText": 33}
+
+<> 2018-10-27T012113.404.html
+
+###
+
+PUT http://localhost:3000/progress/5bd4559c1ec2e318e691d54b
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"dateText":0 , "genderText": "M" , "ageText": 27, "weightText": 80, "heightText": 70, "waistText": 33}
+
+<> 2018-10-27T011957.400.html
+
+###
+
+PUT http://localhost:3000/progress/5bd4559c1ec2e318e691d54b
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"dateText":0 , "genderText": "M" , "ageText": 27, "weightText": 80, "heightText": 70, "waistText": 33}
+
+<> 2018-10-27T011901.400.html
+
+###
+
+GET http://localhost:3000/schedule
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"dateText": 0, "genderText": "M" , "ageText": 27, "weightText": 80, "heightText": 70, "waistText": 33}
+
+<> 2018-10-27T011839.200.json
+
+###
+
+PUT http://localhost:3000/progress/5bd4559c1ec2e318e691d54b
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"dateText": 0, "genderText": "M" , "ageText": 27, "weightText": 80, "heightText": 70, "waistText": 33}
+
+<> 2018-10-27T011703.404.html
 
 ###
 

@@ -1,14 +1,14 @@
 let mongoose = require('mongoose');
 
 let ProgressSchema = new mongoose.Schema({
-        Date: {type: Number, default: 0},
-        Gender: {type: String, default: ""},
-        Age: {type: Number, default: 0},
-        Weight: {type: Number, default: 0},
-        Height: {type: Number, default: 0},
-        Waist: {type: Number, default: 0}
+        date: {type: String, default: "2018-10-27"},
+        gender: {type: String, default: ""},
+        age: {type: Number, default: 0},
+        weight: {type: Number, default: 0},
+        height: {type: Number, default: 0},
+        waist: {type: Number, default: 0}
     },
     { collection: 'progress' });
 
-module.exports = mongoose.model('Progress', ProgressSchema)
+module.exports = mongoose.model('Progress', ProgressSchema);
 

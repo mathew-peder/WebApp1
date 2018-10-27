@@ -6,18 +6,23 @@ let uriUtil = require('mongodb-uri');
 
 
 mongoose.connect('mongodb://localhost:27017/workoutdb');
+var mongodbUri = 'mongodb://mpeder:NAVY1991@ds143293.mlab.com:43293/workoutdb';
+mongoose.connect(mongodbUri);
 
 let db = mongoose.connection;
 
-db.on('error', function (err) {
+db.on('error', function (err)
+{
     console.log('Unable to Connect to [ ' + db.name + ' ]', err);
 });
 
-db.once('open', function () {
+db.once('open', function ()
+{
     console.log('Successfully Connected to [ ' + db.name + ' ] on mlab.com');
 });
 
-router.findAll = (req, res) => {
+router.findAll = (req, res) =>
+{
     // Return a JSON representation of our list
     res.setHeader('Content-Type', 'application/json');
 
@@ -27,7 +32,7 @@ router.findAll = (req, res) => {
 
         res.send(JSON.stringify(schedule,null,5));
     });
-}
+};
 
 router.findOne = (req, res) => {
 
@@ -35,16 +40,16 @@ router.findOne = (req, res) => {
 
     Schedule.find({ "_id" : req.params.id },function(err, schedule) {
         if (err)
-            res.json({ message: 'Donation NOT Found!', errmsg : err } );
+            res.json({ message: 'Schedule NOT Found!', errmsg : err } );
         else
             res.send(JSON.stringify(schedule,null,5));
     });
-}
+};
 
-router.addSunday = (req, res) => {
+router.updateSunday = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
     Schedule.findByIdAndUpdate(req.params.id,
-        {$push: {Sunday: {workout: req.body.workoutText, reps: req.body.repText}}},
+        {$push: {sunday: {workout: req.body.workoutText, reps: req.body.repText}}},
         function (err, schedule) {
             if (err)
                 res.json({ message: 'Workout NOT Added!', errmsg : err } );
@@ -54,10 +59,10 @@ router.addSunday = (req, res) => {
     );
 };
 
-router.addMonday = (req, res) => {
+router.updateMonday = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
     Schedule.findByIdAndUpdate(req.params.id,
-        {$push: {Monday: {workout: req.body.workoutText, reps: req.body.repText}}},
+        {$push: {monday: {workout: req.body.workoutText, reps: req.body.repText}}},
         function (err, schedule) {
             if (err)
                 res.json({ message: 'Workout NOT Added!', errmsg : err } );
@@ -67,10 +72,10 @@ router.addMonday = (req, res) => {
     );
 };
 
-router.addTuesday = (req, res) => {
+router.updateTuesday = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
     Schedule.findByIdAndUpdate(req.params.id,
-        {$push: {Tuesday: {workout: req.body.workoutText, reps: req.body.repText}}},
+        {$push: {tuesday: {workout: req.body.workoutText, reps: req.body.repText}}},
         function (err, schedule) {
             if (err)
                 res.json({ message: 'Workout NOT Added!', errmsg : err } );
@@ -80,10 +85,10 @@ router.addTuesday = (req, res) => {
     );
 };
 
-router.addWednesday = (req, res) => {
+router.updateWednesday = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
     Schedule.findByIdAndUpdate(req.params.id,
-        {$push: {Wednesday: {workout: req.body.workoutText, reps: req.body.repText}}},
+        {$push: {wednesday: {workout: req.body.workoutText, reps: req.body.repText}}},
         function (err, schedule) {
             if (err)
                 res.json({ message: 'Workout NOT Added!', errmsg : err } );
@@ -93,10 +98,10 @@ router.addWednesday = (req, res) => {
     );
 };
 
-router.addThursday = (req, res) => {
+router.updateThursday = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
     Schedule.findByIdAndUpdate(req.params.id,
-        {$push: {Thursday: {workout: req.body.workoutText, reps: req.body.repText}}},
+        {$push: {thursday: {workout: req.body.workoutText, reps: req.body.repText}}},
         function (err, schedule) {
             if (err)
                 res.json({ message: 'Workout NOT Added!', errmsg : err } );
@@ -106,10 +111,10 @@ router.addThursday = (req, res) => {
     );
 };
 
-router.addFriday = (req, res) => {
+router.updateFriday = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
     Schedule.findByIdAndUpdate(req.params.id,
-        {$push: {Friday: {workout: req.body.workoutText, reps: req.body.repText}}},
+        {$push: {friday: {workout: req.body.workoutText, reps: req.body.repText}}},
         function (err, schedule) {
             if (err)
                 res.json({ message: 'Workout NOT Added!', errmsg : err } );
@@ -119,10 +124,10 @@ router.addFriday = (req, res) => {
     );
 };
 
-router.addSaturday = (req, res) => {
+router.updateSaturday = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
     Schedule.findByIdAndUpdate(req.params.id,
-        {$push: {Saturday: {workout: req.body.workoutText, reps: req.body.repText}}},
+        {$push: {saturday: {workout: req.body.workoutText, reps: req.body.repText}}},
         function (err, schedule) {
             if (err)
                 res.json({ message: 'Workout NOT Added!', errmsg : err } );
@@ -141,11 +146,11 @@ router.addSchedule = (req, res) => {
 
     schedule.save(function(err) {
         if (err)
-            res.json({ message: 'Donation NOT Added!', errmsg : err } );
+            res.json({ message: 'Schedule NOT Added!', errmsg : err } );
         else
-            res.json({ message: 'Donation Successfully Added!', data: schedule });
+            res.json({ message: 'New Schedule Successfully Added!', data: schedule });
     });
-}
+};
 
 
 
@@ -153,11 +158,10 @@ router.deleteSchedule = (req, res) => {
 
     Schedule.findByIdAndRemove(req.params.id, function(err) {
         if (err)
-            res.json({ message: 'Donation NOT DELETED!', errmsg : err } );
+            res.json({ message: ' NOT DELETED!', errmsg : err } );
         else
-            res.json({ message: 'Donation Successfully Deleted!'});
+            res.json({ message: 'Successfully Deleted!'});
     });
-}
-
+};
 
 module.exports = router;

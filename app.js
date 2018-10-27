@@ -28,15 +28,28 @@ app.use('/schedule', scheduleRouter);
 
 app.get('/progress', progress.findAll);
 app.get('/schedule', schedule.findAll);
+app.get('/progress/:id', schedule.findOne);
+app.get('/schedule/:id', schedule.findOne);
 app.post('/progress', progress.addProgress);
 app.post('/schedule', schedule.addSchedule);
-app.put('/schedule/Sunday/:id', schedule.addSunday);
-app.put('/schedule/Monday/:id', schedule.addMonday);
-app.put('/schedule/Tuesday/:id', schedule.addTuesday);
-app.put('/schedule/Wednesday/:id', schedule.addWednesday);
-app.put('/schedule/Thursday/:id', schedule.addThursday);
-app.put('/schedule/Friday/:id', schedule.addFriday);
-app.put('/schedule/Saturday/:id', schedule.addSaturday);
+app.post('/progress/', progress.addProgress);
+app.post('/schedule/sunday', schedule.updateSunday);
+app.post('/schedule/monday', schedule.updateMonday);
+app.post('/schedule/tuesday', schedule.updateTuesday);
+app.post('/schedule/wednesday', schedule.updateWednesday);
+app.post('/schedule/thursday', schedule.updateThursday);
+app.post('/schedule/friday', schedule.updateFriday);
+app.post('/schedule/saturday', schedule.updateSaturday);
+app.put('/progress/:id', progress.updateProgress);
+app.put('/schedule/sunday/:id', schedule.updateSunday);
+app.put('/schedule/monday/:id', schedule.updateMonday);
+app.put('/schedule/tuesday/:id', schedule.updateTuesday);
+app.put('/schedule/wednesday/:id', schedule.updateWednesday);
+app.put('/schedule/thursday/:id', schedule.updateThursday);
+app.put('/schedule/friday/:id', schedule.updateFriday);
+app.put('/schedule/saturday/:id', schedule.updateSaturday);
+app.delete('/progress/:id', progress.deleteProgress);
+app.delete('/schedule/:id', schedule.deleteSchedule);
 
 
 // catch 404 and forward to error handler

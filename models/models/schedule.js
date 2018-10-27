@@ -1,31 +1,31 @@
 let mongoose = require('mongoose');
 
 let ScheduleSchema = new mongoose.Schema({
-        Sunday: [{
+        sunday: [{
             workout: {type: String, default: ""},
             reps: {type: Number, default: 0}
                 }],
-        Monday: [{
+        monday: [{
             workout: {type: String, default: ""},
             reps: {type: Number, default: 0}
         }],
-        Tuesday: [{
+        tuesday: [{
             workout: {type: String, default: ""},
             reps: {type: Number, default: 0}
         }],
-        Wednesday: [{
+        wednesday: [{
             workout: {type: String, default: ""},
             reps: {type: Number, default: 0}
         }],
-        Thursday: [{
+        thursday: [{
             workout: {type: String, default: ""},
             reps: {type: Number, default: 0}
         }],
-        Friday: [{
+        friday: [{
             workout: {type: String, default: ""},
             reps: {type: Number, default: 0}
         }],
-        Saturday: [{
+        saturday: [{
             workout: {type: String, default: ""},
             reps: {type: Number, default: 0}
         }]
@@ -33,7 +33,7 @@ let ScheduleSchema = new mongoose.Schema({
     },
     { collection: 'schedule' });
 
-module.exports = mongoose.model('Schedule', ScheduleSchema)
+module.exports = mongoose.model('Schedule', ScheduleSchema);
 
 
 

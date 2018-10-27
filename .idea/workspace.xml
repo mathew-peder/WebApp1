@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d5f9473-d4b2-4571-ad74-3019a7cb6c16" name="Default Changelist" comment="Small changes to code and fixing some typos">
+    <list default="true" id="7d5f9473-d4b2-4571-ad74-3019a7cb6c16" name="Default Changelist" comment="Added put function for Progress and a few other small changes throughout the code including fixing delete errors, and normal style changes. &#10;&#10;Issue: When adding an update to Progress through the PUT function, an error is thrown stating that &quot;age must be an array but is of type int in document&quot;. Age is in the document as a Number, for the record. Attempting to resolve the issue again.">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-21T103116.404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-21T103127.404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-22T025503.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-22T025955.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-22T031841.404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-22T031852.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-22T031900.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-22T032021.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-22T032028.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-22T032509.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-22T032512.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-22T032516.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-22T033917.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-22T033930.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-22T033944.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-22T033954.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/models/progress.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/models/progress.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/models/schedule.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/models/schedule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/progress.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/progress.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/schedule.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/schedule.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -75,61 +97,105 @@
     <session id="1456839775">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
-          <entry key="js" value="41" />
+          <entry key="http" value="5" />
+          <entry key="js" value="62" />
           <entry key="json" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
+          <entry key="HTTP Request" value="1" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="41" />
+          <entry key="JavaScript" value="62" />
+          <entry key="Scratch" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="1" />
-          <entry key="js" value="3079" />
-          <entry key="txt" value="45" />
+          <entry key="http" value="4" />
+          <entry key="js" value="3903" />
+          <entry key="txt" value="532" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="JavaScript" value="3079" />
-          <entry key="PLAIN_TEXT" value="45" />
+          <entry key="HTTP Request" value="4" />
+          <entry key="JavaScript" value="3903" />
+          <entry key="PLAIN_TEXT" value="532" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/progress.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="92" column="2" selection-start-line="92" selection-start-column="2" selection-end-line="92" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/schedule.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="164" column="1" selection-start-line="164" selection-start-column="1" selection-end-line="164" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/models/progress.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/models/schedule.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+            <state relative-caret-position="213">
+              <caret line="35" column="60" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="121">
+              <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app.js">
+        <entry file="file://$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-150">
-              <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+            <state relative-caret-position="129">
+              <caret line="214" column="39" selection-start-line="214" selection-start-column="39" selection-end-line="214" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -146,10 +212,15 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>web</find>
+      <find>sch</find>
+      <find>age</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="dummy://restClient/response223.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -159,16 +230,23 @@
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/routes/users.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
-        <option value="$PROJECT_DIR$/routes/progress.js" />
         <option value="$PROJECT_DIR$/models/models/progress.js" />
-        <option value="$PROJECT_DIR$/models/models/schedule.js" />
+        <option value="$PROJECT_DIR$/routes/progress.js" />
         <option value="$PROJECT_DIR$/routes/schedule.js" />
+        <option value="$PROJECT_DIR$/models/models/schedule.js" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -192,6 +270,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -207,30 +286,26 @@
             <path>
               <item name="WebAppDev_Assign1" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebAppDev_Assign1" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebAppDev_Assign1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAppDev_Assign1" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.10.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../donationweb-2.0" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.selected.package.stylelint" value="" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -242,34 +317,9 @@
     <option name="REQUEST_HISTORY">
       <list>
         <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/schedule/" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;workoutText&quot;: &quot;Bench&quot;, &quot;repText&quot;: 1100}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
           <option name="httpMethod" value="PUT" />
           <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/schedule/Monday/5bcddca5ae680f729712fa5d" />
+          <option name="urlPath" value="/progress/5bd4603b38055221da2905fe" />
           <option name="headers">
             <list>
               <KeyValuePair>
@@ -288,88 +338,13 @@
           </option>
           <option name="parametersEnabled" value="true" />
           <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;workoutText&quot;: &quot;Bench&quot;, &quot;repText&quot;: 1100}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/schedule" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;workoutText&quot;: &quot;Bench&quot;, &quot;repText&quot;: 1100}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="PUT" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/schedule/Monday/1000001" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;workoutText&quot;: &quot;Bench&quot;, &quot;repText&quot;: 1100}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/schedule" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;paymenttype&quot;: &quot;PayPal&quot;, &quot;amount&quot;: 1100, &quot;upvotes&quot;: 0}" />
+          <option name="textToSend" value="{&quot;dateText&quot;: &quot;10&quot;, &quot;genderText&quot;: &quot;M&quot;, &quot;ageText&quot;: 27, &quot;weightText&quot;: 10, &quot;heightText&quot;: 10, &quot;waistText&quot;: 10}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/schedule" />
+          <option name="urlPath" value="/progress/5bd4603b38055221da2905fe" />
           <option name="headers">
             <list>
               <KeyValuePair>
@@ -388,7 +363,157 @@
           </option>
           <option name="parametersEnabled" value="true" />
           <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;paymenttype&quot;: &quot;PayPal&quot;, &quot;amount&quot;: 1100, &quot;upvotes&quot;: 0}" />
+          <option name="textToSend" value="{&quot;dateText&quot;: &quot;10&quot;, &quot;genderText&quot;: &quot;M&quot;, &quot;ageText&quot;: 27, &quot;weightText&quot;: 10, &quot;heightText&quot;: 10, &quot;waistText&quot;: 10}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: &quot;10&quot;, &quot;genderText&quot;: &quot;M&quot;, &quot;ageText&quot;: 27, &quot;weightText&quot;: 10, &quot;heightText&quot;: 10, &quot;waistText&quot;: 10}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: &quot;10&quot;, &quot;genderText&quot;: &quot;M&quot;, &quot;ageText&quot;: 27, &quot;weightText&quot;: 10, &quot;heightText&quot;: 10, &quot;waistText&quot;: 10}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress/5bd45ff21f36bf2149bc6099" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: &quot;10&quot;, &quot;genderText&quot;: &quot;M&quot;, &quot;ageText&quot;: 27, &quot;weightText&quot;: 10, &quot;heightText&quot;: 10, &quot;waistText&quot;: 10}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress/5bd45ff21f36bf2149bc6099" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: &quot;10&quot;, &quot;genderText&quot;: &quot;M&quot;, &quot;ageText&quot;: 27, &quot;weightText&quot;: 10, &quot;heightText&quot;: 10, &quot;waistText&quot;: 10}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: &quot;10&quot;, &quot;genderText&quot;: &quot;M&quot;, &quot;ageText&quot;: &quot;27&quot;, &quot;weightText&quot;: 10, &quot;heightText&quot;: 10, &quot;waistText&quot;: 10}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress/5bd4559c1ec2e318e691d54b" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: &quot;10&quot;, &quot;genderText&quot;: &quot;M&quot;, &quot;ageText&quot;: &quot;27&quot;, &quot;weightText&quot;: 10, &quot;heightText&quot;: 10, &quot;waistText&quot;: 10}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
         <RestClientRequest>
@@ -413,188 +538,13 @@
           </option>
           <option name="parametersEnabled" value="true" />
           <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;paymenttype&quot;: &quot;PayPal&quot;, &quot;amount&quot;: 1100, &quot;upvotes&quot;: 0}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/progress/1000000" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;paymenttype&quot;: &quot;PayPal&quot;, &quot;amount&quot;: 1100, &quot;upvotes&quot;: 0}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/progress/0000001" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;paymenttype&quot;: &quot;PayPal&quot;, &quot;amount&quot;: 1100, &quot;upvotes&quot;: 0}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/donations/5bbde13c13daf08504cb9a1d" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;paymenttype&quot;: &quot;PayPal&quot;, &quot;amount&quot;: 1100, &quot;upvotes&quot;: 0}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/donations/5bbde13c13daf08504cb9a1d" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;id&quot;:0,&quot;paymenttype&quot;:&quot;Direct&quot;,&quot;amount&quot;:500,&quot;upvotes&quot;:0}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/donations" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;id&quot;:0,&quot;paymenttype&quot;:&quot;Direct&quot;,&quot;amount&quot;:500,&quot;upvotes&quot;:0}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/donations/5b1d26cc572f1998d830a691" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;id&quot;:0,&quot;paymenttype&quot;:&quot;Direct&quot;,&quot;amount&quot;:500,&quot;upvotes&quot;:0}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/donations/1000001" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;id&quot;:0,&quot;paymenttype&quot;:&quot;Direct&quot;,&quot;amount&quot;:500,&quot;upvotes&quot;:0}" />
+          <option name="textToSend" value="{&quot;dateText&quot;: &quot;10&quot;, &quot;genderText&quot;: &quot;M&quot;, &quot;ageText&quot;: &quot;27&quot;, &quot;weightText&quot;: 10, &quot;heightText&quot;: 10, &quot;waistText&quot;: 10}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="DELETE" />
           <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/donations/1000001" />
+          <option name="urlPath" value="/progress/5bd45b7b8425751e24302d8f" />
           <option name="headers">
             <list>
               <KeyValuePair>
@@ -613,38 +563,13 @@
           </option>
           <option name="parametersEnabled" value="true" />
           <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;id&quot;:0,&quot;paymenttype&quot;:&quot;Direct&quot;,&quot;amount&quot;:500,&quot;upvotes&quot;:0}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/donations/1000001" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;id&quot;:0,&quot;paymenttype&quot;:&quot;Direct&quot;,&quot;amount&quot;:500,&quot;upvotes&quot;:0}" />
+          <option name="textToSend" value="{&quot;dateText&quot;: &quot;10&quot;, &quot;genderText&quot;: &quot;M&quot;, &quot;ageText&quot;: &quot;27&quot;, &quot;weightText&quot;: 10, &quot;heightText&quot;: 10, &quot;waistText&quot;: 10}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="PUT" />
           <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/donations/1000001" />
+          <option name="urlPath" value="/progress/5bd45b7b8425751e24302d8f" />
           <option name="headers">
             <list>
               <KeyValuePair>
@@ -663,13 +588,13 @@
           </option>
           <option name="parametersEnabled" value="true" />
           <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;id&quot;:0,&quot;paymenttype&quot;:&quot;Direct&quot;,&quot;amount&quot;:500,&quot;upvotes&quot;:0}" />
+          <option name="textToSend" value="{&quot;dateText&quot;: &quot;10&quot;, &quot;genderText&quot;: &quot;M&quot;, &quot;ageText&quot;: &quot;27&quot;, &quot;weightText&quot;: 10, &quot;heightText&quot;: 10, &quot;waistText&quot;: 10}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="PUT" />
           <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/donations/1000001/vote" />
+          <option name="urlPath" value="/progress/5bd45b7b8425751e24302d8f" />
           <option name="headers">
             <list>
               <KeyValuePair>
@@ -688,63 +613,13 @@
           </option>
           <option name="parametersEnabled" value="true" />
           <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;id&quot;:0,&quot;paymenttype&quot;:&quot;Direct&quot;,&quot;amount&quot;:500,&quot;upvotes&quot;:0}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="PUT" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/donations/1000001/votes" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;id&quot;:0,&quot;paymenttype&quot;:&quot;Direct&quot;,&quot;amount&quot;:500,&quot;upvotes&quot;:0}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/donations" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;id&quot;:0,&quot;paymenttype&quot;:&quot;Direct&quot;,&quot;amount&quot;:500,&quot;upvotes&quot;:0}" />
+          <option name="textToSend" value="{&quot;dateText&quot;: &quot;10&quot;, &quot;genderText&quot;: &quot;M&quot;, &quot;ageText&quot;: 27, &quot;weightText&quot;: 10, &quot;heightText&quot;: 10, &quot;waistText&quot;: 10}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="GET" />
           <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/donations" />
+          <option name="urlPath" value="/progress/" />
           <option name="headers">
             <list>
               <KeyValuePair>
@@ -755,10 +630,965 @@
                 <option name="key" value="Cache-Control" />
                 <option name="value" value="no-cache" />
               </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
             </list>
           </option>
           <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: &quot;10&quot;, &quot;genderText&quot;: &quot;M&quot;, &quot;&quot;ageText&quot;: 27, &quot;weightText&quot;: 10, &quot;heightText&quot;: 10, &quot;waistText&quot;: 10}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: &quot;10&quot;, &quot;genderText&quot;: &quot;M&quot;, &quot;ageText&quot;: 10, &quot;weightText&quot;: 10, &quot;heightText&quot;: 10, &quot;waistText&quot;: 10}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress/5bd45b7b8425751e24302d8f" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: &quot;10&quot;, &quot;genderText&quot;: &quot;M&quot;, &quot;ageText&quot;: 10, &quot;weightText&quot;: 10, &quot;heightText&quot;: 10, &quot;waistText&quot;: 10}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress/5bd45b7b8425751e24302d8f" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: &quot;10&quot;, &quot;genderText&quot;: &quot;M&quot;, &quot;ageText&quot;: 10, &quot;weightText&quot;: 10, &quot;heightText&quot;: 10, &quot;waistText&quot;: 10}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;workoutText&quot;: &quot;Bench&quot;, &quot;repText&quot;: 10}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;workoutText&quot;: &quot;Bench&quot;, &quot;repText&quot;: 10}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/schedule/5bd4504b7582ab160fb09fd4" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;workoutText&quot;: &quot;Bench&quot;, &quot;repText&quot;: 10}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/schedule/sunday/5bd4504b7582ab160fb09fd4" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;workoutText&quot;: &quot;Bench&quot;, &quot;repText&quot;: 10}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/schedule/sunday/5bd4504b7582ab160fb09fd4" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;workoutText&quot;: &quot;Bench&quot;, &quot;repText&quot;: 10}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/schedule/5bd4504b7582ab160fb09fd4" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;workoutText&quot;: &quot;Bench&quot;, &quot;repText&quot;: 10}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/schedule" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;workoutText&quot;: &quot;Bench&quot;, &quot;repText&quot;: 10}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/schedule" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;:  &quot;2018-10-27&quot;, &quot;genderText&quot;: &quot;M&quot; , &quot;ageText&quot;: 27, &quot;weightText&quot;: 80, &quot;heightText&quot;: 70, &quot;waistText&quot;: 33}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/schedule" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;:  &quot;2018-10-27&quot;, &quot;genderText&quot;: &quot;M&quot; , &quot;ageText&quot;: 27, &quot;weightText&quot;: 80, &quot;heightText&quot;: 70, &quot;waistText&quot;: 33}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress/5bd4559c1ec2e318e691d54b" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;:  &quot;2018-10-27&quot;, &quot;genderText&quot;: &quot;M&quot; , &quot;ageText&quot;: 27, &quot;weightText&quot;: 80, &quot;heightText&quot;: 70, &quot;waistText&quot;: 33}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress/5bd4559c1ec2e318e691d54b" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;:  &quot;2018-10-27&quot;, &quot;genderText&quot;: &quot;M&quot; , &quot;ageText&quot;: 27, &quot;weightText&quot;: 80, &quot;heightText&quot;: 70, &quot;waistText&quot;: 33}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress/5bd4559c1ec2e318e691d54b" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;:  0, &quot;genderText&quot;: &quot;M&quot; , &quot;ageText&quot;: 27, &quot;weightText&quot;: 80, &quot;heightText&quot;: 70, &quot;waistText&quot;: 33}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress/5bd4559c1ec2e318e691d54b" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: , &quot;genderText&quot;: &quot;M&quot; , &quot;ageText&quot;: 27, &quot;weightText&quot;: 80, &quot;heightText&quot;: 70, &quot;waistText&quot;: 33}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/schedule" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: 0, &quot;genderText&quot;: &quot;M&quot; , &quot;ageText&quot;: 27, &quot;weightText&quot;: 80, &quot;heightText&quot;: 70, &quot;waistText&quot;: 33}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress/5bd4559c1ec2e318e691d54b" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: 0, &quot;genderText&quot;: &quot;M&quot; , &quot;ageText&quot;: 27, &quot;weightText&quot;: 80, &quot;heightText&quot;: 70, &quot;waistText&quot;: 33}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: 0, &quot;genderText&quot;: &quot;M&quot; , &quot;ageText&quot;: 27, &quot;weightText&quot;: 80, &quot;heightText&quot;: 70, &quot;waistText&quot;: 33}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: 0, &quot;genderText&quot;: &quot;M&quot; , &quot;ageText&quot;: 27, &quot;weightText&quot;: 80, &quot;heightText&quot;: 70, &quot;waistText&quot;: 33}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: 0, &quot;genderText&quot;: &quot;M&quot; , &quot;ageText&quot;: 27, &quot;weightText&quot;: 80, &quot;heightText&quot;: 70, &quot;waistText&quot;: 33}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress/5bd349898da25f3b17767a1f" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: 0, &quot;genderText&quot;: &quot;M&quot; , &quot;ageText&quot;: 27, &quot;weightText&quot;: 80, &quot;heightText&quot;: 70, &quot;waistText&quot;: 33}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress/5bd349678da25f3b17767a1e" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: 0, &quot;genderText&quot;: &quot;M&quot; , &quot;ageText&quot;: 27, &quot;weightText&quot;: 80, &quot;heightText&quot;: 70, &quot;waistText&quot;: 33}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress/5bd349658da25f3b17767a1d" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: 0, &quot;genderText&quot;: &quot;M&quot; , &quot;ageText&quot;: 27, &quot;weightText&quot;: 80, &quot;heightText&quot;: 70, &quot;waistText&quot;: 33}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress/5bd349658da25f3b17767a1d" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: 0, &quot;genderText&quot;: &quot;M&quot; , &quot;ageText&quot;: 27, &quot;weightText&quot;: 80, &quot;heightText&quot;: 70, &quot;waistText&quot;: 33}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress/5bd3495e8da25f3b17767a1c" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: 0, &quot;genderText&quot;: &quot;M&quot; , &quot;ageText&quot;: 27, &quot;weightText&quot;: 80, &quot;heightText&quot;: 70, &quot;waistText&quot;: 33}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress/5bd349348da25f3b17767a1b" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: 0, &quot;genderText&quot;: &quot;M&quot; , &quot;ageText&quot;: 27, &quot;weightText&quot;: 80, &quot;heightText&quot;: 70, &quot;waistText&quot;: 33}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress/5bd3492b8da25f3b17767a1a" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: 0, &quot;genderText&quot;: &quot;M&quot; , &quot;ageText&quot;: 27, &quot;weightText&quot;: 80, &quot;heightText&quot;: 70, &quot;waistText&quot;: 33}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress/5bd34043d2fb7e3234955d77" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: 0, &quot;genderText&quot;: &quot;M&quot; , &quot;ageText&quot;: 27, &quot;weightText&quot;: 80, &quot;heightText&quot;: 70, &quot;waistText&quot;: 33}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress/5bd3219697bf6528bdf22aad" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: 0, &quot;genderText&quot;: &quot;M&quot; , &quot;ageText&quot;: 27, &quot;weightText&quot;: 80, &quot;heightText&quot;: 70, &quot;waistText&quot;: 33}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress/5bd31fc697bf6528bdf22aac" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: 0, &quot;genderText&quot;: &quot;M&quot; , &quot;ageText&quot;: 27, &quot;weightText&quot;: 80, &quot;heightText&quot;: 70, &quot;waistText&quot;: 33}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress/5bd31f69d7cacc28463c3a70" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: 0, &quot;genderText&quot;: &quot;M&quot; , &quot;ageText&quot;: 27, &quot;weightText&quot;: 80, &quot;heightText&quot;: 70, &quot;waistText&quot;: 33}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/progress/5bd3498d8da25f3b17767a20" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: 0, &quot;genderText&quot;: &quot;M&quot; , &quot;ageText&quot;: 27, &quot;weightText&quot;: 80, &quot;heightText&quot;: 70, &quot;waistText&quot;: 33}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/schedule/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: 0, &quot;genderText&quot;: &quot;M&quot; , &quot;ageText&quot;: 27, &quot;weightText&quot;: 80, &quot;heightText&quot;: 70, &quot;waistText&quot;: 33}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/schedule/sunday" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: 0, &quot;genderText&quot;: &quot;M&quot; , &quot;ageText&quot;: 27, &quot;weightText&quot;: 80, &quot;heightText&quot;: 70, &quot;waistText&quot;: 33}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/schedule/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: 0, &quot;genderText&quot;: &quot;M&quot; , &quot;ageText&quot;: 27, &quot;weightText&quot;: 80, &quot;heightText&quot;: 70, &quot;waistText&quot;: 33}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/schedule/5bd348d2c9596837d740b68b" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: 0, &quot;genderText&quot;: &quot;M&quot; , &quot;ageText&quot;: 27, &quot;weightText&quot;: 80, &quot;heightText&quot;: 70, &quot;waistText&quot;: 33}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/schedule/5bd348d2c9596837d740b68b" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;dateText&quot;: 0, &quot;genderText&quot;: &quot;M&quot; , &quot;ageText&quot;: 27, &quot;weightText&quot;: 80, &quot;heightText&quot;: 70, &quot;waistText&quot;: 33}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
       </list>
@@ -796,12 +1626,23 @@
       <workItem from="1540214180781" duration="5499000" />
       <workItem from="1540250192771" duration="706000" />
       <workItem from="1540456160192" duration="1342000" />
-      <workItem from="1540557563640" duration="1167000" />
+      <workItem from="1540557563640" duration="1863000" />
+      <workItem from="1540561254073" duration="1686000" />
+      <workItem from="1540571086329" duration="2519000" />
+      <workItem from="1540639253714" duration="6349000" />
     </task>
+    <task id="LOCAL-00001" summary="Small changes to code and fixing some typos as well as adding terminating semi-colons.">
+      <created>1540558887639</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1540558887639</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24800000" />
+    <option name="totallyTimeSpent" value="36050000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -816,11 +1657,10 @@
     <frame x="-1" y="0" width="1368" height="769" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4988067" visible="true" weight="0.12881608" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988067" visible="true" weight="0.12881608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.50119334" side_tool="true" weight="0.26251897" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" visible="true" weight="0.32954547" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32467532" />
@@ -832,7 +1672,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3262987" />
-      <window_info active="true" anchor="bottom" id="REST Client" order="11" visible="true" weight="0.4935065" />
+      <window_info anchor="bottom" id="REST Client" order="11" weight="0.4935065" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.32954547" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -846,7 +1687,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Small changes to code and fixing some typos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small changes to code and fixing some typos" />
+    <MESSAGE value="Small changes to code and fixing some typos as well as adding terminating semi-colons." />
+    <MESSAGE value="Added put function for Progress and a few other small changes throughout the code including fixing delete errors, and normal style changes. &#10;&#10;Issue: When adding an update to Progress through the PUT function, an error is thrown stating that &quot;age must be an array but is of type int in document&quot;. Age is in the document as a Number, for the record. Attempting to resolve the issue again." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added put function for Progress and a few other small changes throughout the code including fixing delete errors, and normal style changes. &#10;&#10;Issue: When adding an update to Progress through the PUT function, an error is thrown stating that &quot;age must be an array but is of type int in document&quot;. Age is in the document as a Number, for the record. Attempting to resolve the issue again." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/models/donations.js" />
@@ -876,6 +1719,28 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/users.js" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/rest-api_3.http">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/rest-api_4.http">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/rest-api_2.http">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/rest-api_5.http">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/progress.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/schedule.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -883,44 +1748,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/schedule.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/progress.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/models/progress.js">
+    <entry file="file://$PROJECT_DIR$/routes/progress.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+        <state relative-caret-position="173">
+          <caret line="92" column="2" selection-start-line="92" selection-start-column="2" selection-end-line="92" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/schedule.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="140" selection-start-line="140" selection-end-line="140" />
+        <state relative-caret-position="202">
+          <caret line="164" column="1" selection-start-line="164" selection-start-column="1" selection-end-line="164" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/progress.js">
+    <entry file="file://$PROJECT_DIR$/models/models/progress.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="180">
+          <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/models/schedule.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+        <state relative-caret-position="213">
+          <caret line="35" column="60" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+        <state relative-caret-position="121">
+          <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="214" column="39" selection-start-line="214" selection-start-column="39" selection-end-line="214" selection-end-column="39" />
         </state>
       </provider>
     </entry>
