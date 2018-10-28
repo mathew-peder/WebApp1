@@ -23,5 +23,7 @@ Heroku Link: https://mpeder-webapp1.herokuapp.com/
 Youtube Testing Link: https://youtu.be/NKAN7dFe1d8
 
 References:
-Lab work from David Drohan 
-https://www.w3schools.com/js/
+
+- Lab work from David Drohan 
+
+- https://www.w3schools.com/js/
