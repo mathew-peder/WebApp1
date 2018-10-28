@@ -17,8 +17,10 @@ Issues/WIP:
 The app keeps track of all data within the database and adds it to the database in mlab as well as updating the heroku page. 
 
 Github link: https://github.com/mathew-peder/WebApp1
+
 Heroku Link: https://mpeder-webapp1.herokuapp.com/
-Youtube Testing Link: 
+
+Youtube Testing Link: https://youtu.be/NKAN7dFe1d8
 
 References:
 Lab work from David Drohan 
