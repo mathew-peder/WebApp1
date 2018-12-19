@@ -1,3 +1,100 @@
+POST http://localhost:3000/schedule/
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"workoutText": "Bench", "repText": 10}
+
+<> 2018-12-19T114746.200.json
+
+###
+
+GET http://localhost:3000/schedule/
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"workoutText": "Bench", "repText": 10}
+
+<> 2018-12-19T114721.200.json
+
+###
+
+GET http://localhost:3000/schedule/5bd4504b7582ab160fb09fd4
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"workoutText": "Bench", "repText": 10}
+
+<> 2018-10-28T032205.200.json
+
+###
+
+PUT http://localhost:3000/schedule/monday/5bd4504b7582ab160fb09fd4
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"workoutText": "Bench", "repText": 10}
+
+<> 2018-10-28T032158.200.json
+
+###
+
+PUT http://localhost:3000/schedule/sunday/5bd4504b7582ab160fb09fd4
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"workoutText": "Bench", "repText": 10}
+
+<> 2018-10-28T032131.200.json
+
+###
+
+PUT http://localhost:3000/schedule/monday/5bd4504b7582ab160fb09fd4
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"workoutText":"pullups", "repText":20}
+
+<> 2018-10-28T032052.200.json
+
+###
+
+GET http://localhost:3000/schedule/5bd4504b7582ab160fb09fd4
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"workout":"pullups", "reps":20}
+
+<> 2018-10-28T032024.200.json
+
+###
+
+PUT http://localhost:3000/schedule/monday/5bd4504b7582ab160fb09fd4
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"workout":"pullups", "reps":20}
+
+<> 2018-10-28T032004.200.json
+
+###
+
+GET http://localhost:3000/schedule
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-28T031503.200.json
+
+###
+
 PUT http://localhost:3000/progress/5bd4686c6f97cd283a512ee9
 Accept: application/json
 Cache-Control: no-cache
@@ -412,97 +509,6 @@ Cache-Control: no-cache
 Content-Type: application/json
 
 {"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
-
-###
-
-GET http://localhost:3000/progress/5bd4603b38055221da2905fe
-Accept: application/json
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
-
-###
-
-GET http://localhost:3000/progress/5bd4603b38055221da2905fe
-Accept: application/json
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
-
-###
-
-GET http://localhost:3000/progress/5bd4603b38055221da2905fe
-Accept: application/json
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
-
-###
-
-GET http://localhost:3000/progress/5bd4603b38055221da2905fe
-Accept: application/json
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
-
-###
-
-PUT http://localhost:3000/progress/5bd4603b38055221da2905fe
-Accept: application/json
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
-
-<> 2018-10-27T021053.200.json
-
-###
-
-PUT http://localhost:3000/progress/5bd4603b38055221da2905fe
-Accept: application/json
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
-
-<> 2018-10-27T020812.200.json
-
-###
-
-PUT http://localhost:3000/progress/5bd4603b38055221da2905fe
-Accept: application/json
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
-
-<> 2018-10-27T015543.200.json
-
-###
-
-POST http://localhost:3000/progress/5bd4603b38055221da2905fe
-Accept: application/json
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
-
-<> 2018-10-27T015538.404.html
-
-###
-
-POST http://localhost:3000/progress/
-Accept: application/json
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
-
-<> 2018-10-27T015523.200.json
 
 ###
 
