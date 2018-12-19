@@ -5,7 +5,7 @@ let mongoose = require('mongoose');
 let uriUtil = require('mongodb-uri');
 
 mongoose.connect('mongodb://localhost:27017/workoutdb');
-var mongodbUri = 'mongodb://mpeder:NAVY1991@ds143293.mlab.com:43293/workoutdb';
+var mongodbUri = 'mongodb://matped0225:NAVY1991@ds143293.mlab.com:43293/workoutdb';
 mongoose.connect(mongodbUri);
 
 let db = mongoose.connection;
