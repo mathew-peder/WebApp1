@@ -1,3 +1,44 @@
+POST http://localhost:3000/progress
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-12-19T072740.200.json
+
+###
+
+POST http://localhost:3000/progress
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-12-19T072641.200.json
+
+###
+
+POST http://localhost:3000/progress
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-12-19T072443.200.json
+
+###
+
+POST http://localhost:3000/progress
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+###
+
+POST http://localhost:3000/progress
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+###
+
 POST http://localhost:3000/schedule/
 Accept: application/json
 Cache-Control: no-cache
@@ -459,51 +500,6 @@ Content-Type: application/json
 ###
 
 GET http://localhost:3000/progress/
-Accept: application/json
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
-
-###
-
-GET http://localhost:3000/progress/5bd4603b38055221da2905fe
-Accept: application/json
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
-
-###
-
-GET http://localhost:3000/progress/5bd4603b38055221da2905fe
-Accept: application/json
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
-
-###
-
-GET http://localhost:3000/progress/5bd4603b38055221da2905fe
-Accept: application/json
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
-
-###
-
-GET http://localhost:3000/progress/5bd4603b38055221da2905fe
-Accept: application/json
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
-
-###
-
-GET http://localhost:3000/progress/5bd4603b38055221da2905fe
 Accept: application/json
 Cache-Control: no-cache
 Content-Type: application/json

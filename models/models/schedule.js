@@ -4,31 +4,31 @@ let mongoose = require('mongoose');
 Schema for the Schedule collection which is an array for each day of the week.workout
  */
 let ScheduleSchema = new mongoose.Schema({
-        Sunday: [{
+        sunday: [{
             workout: {type: String, default: ""},
             reps: {type: Number, default: 0}
                 }],
-        Monday: [{
+        monday: [{
             workout: {type: String, default: ""},
             reps: {type: Number, default: 0}
         }],
-        Tuesday: [{
+        tuesday: [{
             workout: {type: String, default: ""},
             reps: {type: Number, default: 0}
         }],
-        Wednesday: [{
+        wednesday: [{
             workout: {type: String, default: ""},
             reps: {type: Number, default: 0}
         }],
-        Thursday: [{
+        thursday: [{
             workout: {type: String, default: ""},
             reps: {type: Number, default: 0}
         }],
-        Friday: [{
+        friday: [{
             workout: {type: String, default: ""},
             reps: {type: Number, default: 0}
         }],
-        Saturday: [{
+        saturday: [{
             workout: {type: String, default: ""},
             reps: {type: Number, default: 0}
         }]

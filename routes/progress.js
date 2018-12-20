@@ -57,12 +57,12 @@ router.addProgress = (req, res) => {
 
     var progress = new Progress();
 
-    progress.dateText = req.body.Date;
-    progress.genderText = req.body.Gender;
-    progress.ageText = req.body.Age;
-    progress.weightText = req.body.Weight;
-    progress.heightText = req.body.Height;
-    progress.waistText = req.body.Waist;
+    progress.dateText = req.body.date;
+    progress.genderText = req.body.gender;
+    progress.ageText = req.body.age;
+    progress.weightText = req.body.weight;
+    progress.heightText = req.body.height;
+    progress.waistText = req.body.waist;
 
     progress.save(function(err) {
         if (err)
@@ -79,7 +79,7 @@ Currently having issues with PUT. Throws an error stating 'age' is an array, but
 router.updateProgress = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
     Progress.findByIdAndUpdate(req.params.id,
-        {$push: {Date: req.body.dateText, Gender: req.body.genderText, Age: req.body.ageText, Weight: req.body.weightText, Height: req.body.heightText, Waist: req.body.waistText}},
+        {$push: {date: req.body.dateText, gender: req.body.genderText, age: req.body.ageText, weight: req.body.weightText, height: req.body.heightText, waist: req.body.waistText}},
         function (err, progress) {
             if (err)
                 res.json({ message: 'Workout NOT Added!', errmsg : err } );
