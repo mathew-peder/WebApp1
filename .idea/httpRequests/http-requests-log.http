@@ -1,3 +1,21 @@
+POST http://localhost:3000/schedule
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-12-20T060055.200.json
+
+###
+
+POST http://localhost:3000/progress
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-12-20T055220.200.json
+
+###
+
 POST http://localhost:3000/progress
 Accept: application/json
 Cache-Control: no-cache
@@ -451,24 +469,6 @@ Content-Type: application/json
 {"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
 
 <> 2018-10-27T021540.200.json
-
-###
-
-GET http://localhost:3000/progress/
-Accept: application/json
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
-
-###
-
-GET http://localhost:3000/progress/
-Accept: application/json
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"dateText": "10", "genderText": "M", "ageText": 27, "weightText": 10, "heightText": 10, "waistText": 10}
 
 ###
 
