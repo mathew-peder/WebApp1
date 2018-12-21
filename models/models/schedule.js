@@ -4,35 +4,36 @@ let mongoose = require('mongoose');
 Schema for the Schedule collection which is an array for each day of the week.workout
  */
 let ScheduleSchema = new mongoose.Schema({
-        sunday: [{
-            workout: {type: String, default: ""},
-            reps: {type: Number, default: 0}
-                }],
-        monday: [{
-            workout: {type: String, default: ""},
-            reps: {type: Number, default: 0}
-        }],
-        tuesday: [{
-            workout: {type: String, default: ""},
-            reps: {type: Number, default: 0}
-        }],
-        wednesday: [{
-            workout: {type: String, default: ""},
-            reps: {type: Number, default: 0}
-        }],
-        thursday: [{
-            workout: {type: String, default: ""},
-            reps: {type: Number, default: 0}
-        }],
-        friday: [{
-            workout: {type: String, default: ""},
-            reps: {type: Number, default: 0}
-        }],
-        saturday: [{
-            workout: {type: String, default: ""},
-            reps: {type: Number, default: 0}
+        Weekly: [{
+            Sunday: [{
+                workout: {type: String, default: ""},
+                reps: {type: Number, default: 0}
+            }],
+            Monday: [{
+                workout: {type: String, default: ""},
+                reps: {type: Number, default: 0}
+            }],
+            Tuesday: [{
+                workout: {type: String, default: ""},
+                reps: {type: Number, default: 0}
+            }],
+            Wednesday: [{
+                workout: {type: String, default: ""},
+                reps: {type: Number, default: 0}
+            }],
+            Thursday: [{
+                workout: {type: String, default: ""},
+                reps: {type: Number, default: 0}
+            }],
+            Friday: [{
+                workout: {type: String, default: ""},
+                reps: {type: Number, default: 0}
+            }],
+            Saturday: [{
+                workout: {type: String, default: ""},
+                reps: {type: Number, default: 0}
+            }]
         }]
-
     },
     { collection: 'schedule' });
 
