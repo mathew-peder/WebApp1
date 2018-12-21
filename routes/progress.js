@@ -57,12 +57,12 @@ router.addProgress = (req, res) => {
 
     var progress = new Progress();
 
-    progress.dateText = req.body.date;
-    progress.genderText = req.body.gender;
-    progress.ageText = req.body.age;
-    progress.weightText = req.body.weight;
-    progress.heightText = req.body.height;
-    progress.waistText = req.body.waist;
+    progress.date = req.body.date;
+    progress.gender = req.body.gender;
+    progress.age = req.body.age;
+    progress.weight = req.body.weight;
+    progress.height = req.body.height;
+    progress.waist = req.body.waist;
 
     progress.save(function(err) {
         if (err)
