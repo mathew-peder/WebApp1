@@ -33,13 +33,12 @@ app.use('/', indexRouter);
 app.use('/progress', progressRouter);
 app.use('/schedule', scheduleRouter);
 
+app.post('/progress', progress.addProgress);
+app.post('/schedule', schedule.addSchedule);
 app.get('/progress', progress.findAll);
 app.get('/schedule', schedule.findAll);
 app.get('/progress/:id', progress.findOne);
 app.get('/schedule/:id', schedule.findOne);
-app.post('/progress', progress.addProgress);
-app.post('/schedule', schedule.addSchedule);
-app.post('/progress/', progress.addProgress);
 app.put('/progress/:id', progress.updateProgress);
 app.put('/schedule/sunday/:id', schedule.updateSunday);
 app.put('/schedule/monday/:id', schedule.updateMonday);
